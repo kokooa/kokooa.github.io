@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>편의점 키우기 — 개인정보 처리방침</title>
+<meta name="description" content="편의점 키우기(com.kokooa.cvstycoon) 개인정보 처리방침. 시행일 2026-07-05.">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f8f6;
+    --card-bg: #ffffff;
+    --text: #23291f;
+    --muted: #5b6357;
+    --accent: #1f8a4c;
+    --accent-soft: #e6f4ea;
+    --border: #e1e5dc;
+    --code-bg: #f0f2ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14170f;
+      --card-bg: #1b2016;
+      --text: #eef1e9;
+      --muted: #a9b39c;
+      --accent: #4fd383;
+      --accent-soft: #1d2e21;
+      --border: #2b3325;
+      --code-bg: #232a1d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic",
+                 "Segoe UI", Roboto, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 20px 80px;
+  }
+  header.page-head {
+    margin-bottom: 24px;
+  }
+  header.page-head .badge {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+  }
+  .effective-date {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+  .intro {
+    font-size: 15px;
+    color: var(--text);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  nav.toc {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 20px 0 32px;
+  }
+  nav.toc h2 {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  nav.toc ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    columns: 1;
+  }
+  nav.toc li { margin-bottom: 6px; font-size: 14px; }
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover, nav.toc a:focus { border-bottom-color: var(--accent); color: var(--accent); }
+
+  section {
+    scroll-margin-top: 16px;
+    margin: 0 0 28px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent-soft);
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p { margin: 0 0 12px; font-size: 15px; }
+  ul, ol.list { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; font-size: 15px; }
+  strong { color: var(--text); font-weight: 700; }
+  a { color: var(--accent); }
+
+  .vendor-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card-bg);
+    overflow: hidden;
+    margin: 0 0 12px;
+  }
+  .vendor-row {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .vendor-row:last-child { border-bottom: none; }
+  .vendor-row .label {
+    display: block;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+  .vendor-row .value {
+    display: block;
+    font-size: 15px;
+    color: var(--text);
+  }
+
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--text);
+    margin: 0 0 12px;
+  }
+  code {
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.9em;
+  }
+  .contact-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .contact-box a { font-weight: 600; }
+  .placeholder-note {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer .disclaimer { margin-bottom: 14px; }
+  .back-to-top {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+  hr.sep {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 28px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head" id="top">
+    <span class="badge">개인정보 처리방침</span>
+    <h1>편의점 키우기 개인정보 처리방침</h1>
+    <p class="effective-date">시행일: 2026년 7월 5일 · 패키지명: <code>com.kokooa.cvstycoon</code></p>
+  </header>
+
+  <div class="intro">
+    본 문서는 모바일 게임 <strong>편의점 키우기</strong>(이하 "본 앱")를 개발·배포하는 개발자(이하 "개발자")가
+    이용자의 정보를 어떻게 처리하는지 설명하는 개인정보 처리방침입니다. 본 방침은 Google Play와 App Store
+    두 배포 채널 모두에 동일하게 적용됩니다. 이용자는 본 앱을 설치·이용함으로써 본 방침에 따라 정보가
+    처리된다는 점에 동의하는 것으로 간주됩니다.
+  </div>
+
+  <nav class="toc" aria-label="목차">
+    <h2>목차</h2>
+    <ul>
+      <li><a href="#sec-1">1. 총칙</a></li>
+      <li><a href="#sec-2">2. 수집하는 정보</a></li>
+      <li><a href="#sec-3">3. 정보 이용 목적</a></li>
+      <li><a href="#sec-4">4. 제3자 제공 및 처리위탁</a></li>
+      <li><a href="#sec-5">5. 보관 기간 및 파기</a></li>
+      <li><a href="#sec-6">6. 이용자의 권리와 선택</a></li>
+      <li><a href="#sec-7">7. 아동의 개인정보 보호</a></li>
+      <li><a href="#sec-8">8. 국외 이전 및 지역별 안내</a></li>
+      <li><a href="#sec-9">9. 개인정보 처리방침의 변경</a></li>
+      <li><a href="#sec-10">10. 문의처</a></li>
+    </ul>
+  </nav>
+
+  <section id="sec-1">
+    <h2>1. 총칙</h2>
+    <p>
+      본 앱은 회원가입, 로그인, 서버 계정이 전혀 없는 오프라인 싱글플레이 게임입니다. 개발자는 본 앱을
+      서비스하기 위한 별도의 서버를 운영하지 않으며, 게임 진행과 관련한 어떠한 데이터도 개발자에게 전송되지
+      않습니다. 본 앱에서 발생하는 유일한 네트워크 통신은 아래 2장에서 설명하는 광고 SDK(Google AdMob)에
+      의한 것입니다.
+    </p>
+  </section>
+
+  <section id="sec-2">
+    <h2>2. 수집하는 정보</h2>
+
+    <h3>2.1 본 앱이 직접 수집하는 정보 — 없음</h3>
+    <p>
+      본 앱은 이름, 이메일, 전화번호, 위치정보, 사진 등 어떠한 개인정보도 직접 수집하지 않습니다. 재화,
+      상품·매장 레벨, 알바 고용 현황, 업적 달성 여부, 명성(프레스티지) 진행도, 설정값 등 모든 게임 진행
+      데이터는 <strong>이용자의 기기 안(브라우저 localStorage)에만 저장</strong>되며, 개발자의 서버나
+      그 어떤 제3자에게도 전송되지 않습니다. 개발자는 이용자가 게임을 얼마나, 어떻게 플레이하는지 전혀
+      알 수 없습니다.
+    </p>
+
+    <h3>2.2 광고 서비스(Google AdMob)를 통해 처리되는 정보</h3>
+    <p>
+      본 앱은 무료로 제공되며, <strong>Google AdMob</strong>을 통해 보상형(리워드) 광고, 전면 광고, 배너
+      광고를 게재하여 운영비를 충당합니다. 광고가 요청·게재·시청되는 과정에서 Google 및 Google의 광고
+      네트워크·미디에이션 파트너가 아래와 같은 정보를 자체적으로 수집·처리할 수 있습니다.
+    </p>
+    <ul>
+      <li>광고 식별자 (Android 광고 ID, iOS IDFA)</li>
+      <li>기기 정보 (기기 모델, OS 버전, 언어, 대략적인 지역 등)</li>
+      <li>IP 주소 기반의 대략적인 위치 정보</li>
+      <li>광고 노출·클릭·시청 이력 등 광고 상호작용 데이터</li>
+    </ul>
+    <p>
+      위 정보는 <strong>개발자가 직접 수집·저장·열람하지 않으며, Google이 자체 개인정보처리방침에 따라
+      처리</strong>합니다. iOS에서는 앱 최초 실행 시 시스템의 "앱 추적 투명성(ATT)" 권한 요청을 통해
+      광고 식별자 추적 여부를 이용자가 직접 선택할 수 있습니다(6.1 참고).
+    </p>
+  </section>
+
+  <section id="sec-3">
+    <h2>3. 정보 이용 목적</h2>
+    <p>본 앱과 관련하여 처리되는 정보는 다음 목적에 한하여 이용됩니다.</p>
+    <ul>
+      <li>이용자에게 광고(맞춤형 또는 일반 광고)를 게재하기 위한 목적</li>
+      <li>비정상적인 광고 클릭·노출 등 부정 행위를 탐지하고 방지하기 위한 목적</li>
+      <li>광고 게재 성과 측정 및 광고 서비스의 안정적인 운영을 위한 목적</li>
+    </ul>
+    <p>
+      개발자는 위 목적 외의 용도(이용자 개인 식별, 프로파일링, 정보 판매 등)로 정보를 이용하지 않으며,
+      애초에 그러한 정보를 보유하고 있지 않습니다.
+    </p>
+  </section>
+
+  <section id="sec-4">
+    <h2>4. 제3자 제공 및 처리위탁</h2>
+    <p>개발자는 광고 서비스 제공을 위해 아래와 같이 정보 처리를 외부 사업자에게 맡기고 있습니다.</p>
+    <div class="vendor-card">
+      <div class="vendor-row">
+        <span class="label">수탁업체</span>
+        <span class="value">Google LLC (Google AdMob)</span>
+      </div>
+      <div class="vendor-row">
+        <span class="label">위탁 업무</span>
+        <span class="value">광고 게재, 광고 성과 측정, 부정 클릭 방지</span>
+      </div>
+      <div class="vendor-row">
+        <span class="label">처리되는 정보</span>
+        <span class="value">광고 식별자, 기기정보, 대략적 위치, 광고 상호작용 데이터</span>
+      </div>
+      <div class="vendor-row">
+        <span class="label">정책 링크</span>
+        <span class="value"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침 →</a></span>
+      </div>
+    </div>
+    <p>
+      개발자는 AdMob 외에 이용자의 정보를 별도의 제3자에게 제공하지 않습니다. 다만 Google AdMob은 자체
+      광고 네트워크 및 미디에이션 파트너를 통해 광고를 게재할 수 있으며, 이 경우에도 실제 정보 처리 주체는
+      Google과 해당 파트너이고 개발자는 이를 직접 통제하지 않습니다.
+    </p>
+  </section>
+
+  <section id="sec-5">
+    <h2>5. 보관 기간 및 파기</h2>
+    <ul>
+      <li>
+        <strong>게임 진행 데이터</strong>: 이용자의 기기 안(localStorage)에만 저장되고 개발자의 서버에는
+        어떠한 게임 데이터도 보관되지 않습니다. 이용자가 앱을 삭제하거나 기기 설정에서 앱 데이터를
+        초기화하면 즉시 모두 파기됩니다. 개발자는 별도의 백업본을 보유하지 않으므로 삭제된 데이터는
+        복구할 수 없습니다.
+      </li>
+      <li>
+        <strong>광고 식별자 등 광고 SDK 처리 정보</strong>: Google의 자체 정책과 보관 기준에 따라
+        처리·보관되며, 개발자가 임의로 열람하거나 파기할 수 없습니다. 이용자는 6장의 방법으로 광고
+        개인화를 제한하거나 광고 식별자를 재설정할 수 있습니다.
+      </li>
+    </ul>
+  </section>
+
+  <section id="sec-6">
+    <h2>6. 이용자의 권리와 선택</h2>
+
+    <h3>6.1 iOS 앱 추적 투명성(ATT)</h3>
+    <p>
+      iOS에서 앱을 처음 실행하면 시스템이 "추적" 권한을 묻는 팝업을 표시할 수 있습니다.
+      <strong>이용자가 이를 거부하더라도 게임 플레이에는 아무런 제약이 없습니다.</strong> 다만 이 경우
+      맞춤형 광고 대신 일반(비맞춤형) 광고가 노출될 수 있습니다. 이 설정은 iOS
+      <strong>설정 &gt; 개인정보 보호 및 보안 &gt; 추적</strong>에서 앱별로 언제든지 변경할 수 있습니다.
+    </p>
+
+    <h3>6.2 Android 광고 개인화 해제</h3>
+    <p>
+      Android 기기에서는 <strong>설정 &gt; Google &gt; 광고</strong>(기기 제조사에 따라 경로가 다를 수
+      있음)에서 "광고 개인 최적화 선택 해제"를 켜면 맞춤형 광고 대신 일반 광고를 받아볼 수 있습니다.
+    </p>
+
+    <h3>6.3 광고 식별자 재설정</h3>
+    <p>
+      Android(광고 ID)와 iOS(IDFA) 모두 기기 설정에서 광고 식별자를 재설정할 수 있습니다. 재설정하면
+      기존 식별자를 통해 축적된 광고 프로필과의 연결이 끊어지고, 이후 새 식별자로 광고가 게재됩니다.
+    </p>
+
+    <h3>6.4 문의를 통한 권리 행사</h3>
+    <p>
+      본 앱은 서버에 개인정보를 보관하지 않으므로 개발자에게 열람·정정·삭제를 요청할 별도의 서버 저장
+      데이터 자체가 없습니다. 광고 SDK가 처리하는 정보에 대한 열람·삭제 등은 Google의 정책 및 절차를
+      따릅니다. 그 밖에 본 방침에 대한 문의나 개인정보 관련 우려 사항은 10장의 연락처로 언제든지 문의할
+      수 있습니다.
+    </p>
+  </section>
+
+  <section id="sec-7">
+    <h2>7. 아동의 개인정보 보호</h2>
+    <p>
+      본 앱은 폭력·선정성·사행성 요소가 없는 전연령 이용가 게임이지만, <strong>만 14세 미만 아동을 주
+      이용 대상으로 기획하지 않았습니다.</strong> (국가·지역에 따라 아동 기준 연령은 다를 수 있습니다,
+      예: 미국 COPPA는 만 13세 미만.) 앞서 밝힌 바와 같이 본 앱 자체는 어떤 이용자로부터도 개인정보를
+      수집하지 않으므로, 아동의 개인정보 역시 별도로 수집·저장하지 않습니다. 아동의 개인정보와 관련하여
+      우려되는 사항이 확인되면 10장의 연락처로 알려주시기 바라며, 확인 즉시 조치하겠습니다.
+    </p>
+  </section>
+
+  <section id="sec-8">
+    <h2>8. 국외 이전 및 지역별 안내</h2>
+    <p>
+      Google AdMob은 전 세계에 걸쳐 서버를 운영하므로, 광고 SDK가 처리하는 정보는 국외로 이전되어
+      처리될 수 있습니다. 유럽경제지역(EEA), 영국, 스위스 등 GDPR이 적용되는 지역의 이용자에게는
+      Google이 제공하는 <strong>동의 관리 플랫폼(UMP, User Messaging Platform)</strong> 등을 통한
+      별도의 동의 절차가 적용될 수 있으며, 세부 사항은 Google의 정책을 따릅니다.
+    </p>
+  </section>
+
+  <section id="sec-9">
+    <h2>9. 개인정보 처리방침의 변경</h2>
+    <p>
+      본 방침은 관련 법령, 광고 SDK 정책 또는 서비스 내용의 변경에 따라 개정될 수 있습니다. 방침이
+      변경되는 경우 개정된 내용과 시행일을 이 페이지에 게시하고 상단의 시행일을 갱신합니다. 이용자에게
+      중요한 영향을 미치는 변경이 있는 경우에는 앱 내 공지 등을 통해 추가로 안내하도록 노력합니다.
+    </p>
+  </section>
+
+  <section id="sec-10">
+    <h2>10. 문의처</h2>
+    <div class="contact-box">
+      <p style="margin-bottom:6px;">본 방침이나 개인정보 처리에 관하여 문의사항이 있으시면 아래 이메일로 연락해 주십시오.</p>
+      <p style="margin-bottom:0;">이메일: <a href="mailto:kokooa0183@gmail.com">kokooa0183@gmail.com</a></p>
+      <!-- 문의처 플레이스홀더: 위 이메일은 개발자 연락처입니다. 별도 지원 채널(전용 이메일 등)을 원하면
+           이 주소를 교체하세요. docs/PRIVACY.md의 동일 항목도 함께 교체해야 합니다. -->
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <footer>
+    <a class="back-to-top" href="#top">↑ 맨 위로</a>
+    <p class="disclaimer">
+      본 문서는 일반적인 개인정보 처리방침 작성 실무를 기준으로 작성되었으며, 특정 법률에 대한 전문적인
+      법률 자문을 대체하지 않습니다. 배포 대상 국가·지역의 법령(예: 개인정보보호법, GDPR, CCPA 등)에
+      따라 추가 검토가 필요할 수 있습니다.
+    </p>
+    <p>편의점 키우기 · com.kokooa.cvstycoon · 시행일 2026-07-05</p>
+  </footer>
+
+</div>
+</body>
+</html>
